@@ -1,9 +1,8 @@
-import {Router} from '@core/routes/Router'
-import {DashboardPage} from '@/pages/DashboardPage'
-import {ExcelPage} from '@/pages/ExcelPage'
+import {Excel} from '@/components/excel/Excel'
 import './scss/index.scss'
 
-new Router('#app', {
-  dashboard: DashboardPage,
-  excel: ExcelPage
+const excel = new Excel('#app', {
+  components: []
 })
+
+console.log('Excel', excel)
