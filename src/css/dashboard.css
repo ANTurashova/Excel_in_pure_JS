@@ -1,52 +1,80 @@
-/*
-Error: File to import not found or unreadable: variables.
-       Load path: D:/Coding/Excel_in_pure_JS/src/scss
-        on line 1 of D:\Coding\Excel_in_pure_JS\src\scss\dashboard.scss
+.db__header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0 2px 5px 2px rgba(60, 64, 67, 0.15);
+  z-index: 1000;
+}
+.db__new {
+  margin-top: 64px;
+  padding: 1.5rem;
+  background: #dadce0;
+}
+.db__create {
+  width: 160px;
+  height: 160px;
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #dadce0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+}
+.db__create:hover {
+  cursor: pointer;
+  color: green;
+  border-color: green;
+}
+.db__view {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.db__table {
+  padding: 1rem;
+}
+.db__list-header {
+  display: flex;
+  justify-content: space-between;
+  color: #202124;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 0 12px;
+}
+.db__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.db__record {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px 12px 16px;
+  margin-bottom: 10px;
+}
+.db__record:hover {
+  background: #e6f4ea;
+  border-radius: 25px;
+}
+.db__record a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #202124;
+  font-size: 14px;
+}
+.db__record a:hover {
+  text-decoration: underline;
+}
 
-1: @import "variables";
-2: @import "mixins";
-3: 
-4: .db {
-5: 
-6:   &__header {
-
-Backtrace:
-D:\Coding\Excel_in_pure_JS\src\scss\dashboard.scss:1
-D:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
-D:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:45:in `import'
-D:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:28:in `imported_file'
-D:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:37:in `css_import?'
-D:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
-D:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-D:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-D:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-D:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-D:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-D:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-D:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-D:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-D:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-D:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-D:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-D:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-D:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-D:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-D:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-D:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-D:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-D:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-D:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-D:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-D:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-D:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-D:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-D:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-D:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-D:/Program Files/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-D:/Program Files/Koala/bin/sass:22:in `load'
-D:/Program Files/Koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: variables.\A        Load path: D:/Coding/Excel_in_pure_JS/src/scss\A         on line 1 of D:\Coding\Excel_in_pure_JS\src\scss\dashboard.scss\A \A 1: @import \"variables\";\A 2: @import \"mixins\";\A 3: \A 4: .db {\A 5: \A 6:   &__header {"; }
+/*# sourceMappingURL=dashboard.css.map */
